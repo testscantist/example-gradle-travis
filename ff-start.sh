@@ -29,6 +29,8 @@ ls
 echo $cwd
 ./TreeBuilder $cwd
 
+cat raw-output.txt
+
 #Log that the script download is complete and proceeding
 echo "Uploading report at $SCANTIST_IMPORT_URL"
 
