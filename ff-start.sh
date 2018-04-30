@@ -7,20 +7,20 @@ echo "inside ff-start.sh script"
 SCANTIST_IMPORT_URL="http://e8482e5c.ngrok.io/import/"
 
 
-# run Java cmd and store logs
-run_script() {
-  if [ -f pom.xml ]; then
-    mvn -B dependency:tree
-  fi
-  if [ -f build.gradle ]; then
-    gradle dependencies --configuration compile
-  fi
+# # run Java cmd and store logs
+# run_script() {
+#   if [ -f pom.xml ]; then
+#     mvn -B dependency:tree
+#   fi
+#   if [ -f build.gradle ]; then
+#     gradle dependencies --configuration compile
+#   fi
 
-}
-echo "------------------------------------"
-echo "run_script"
+# }
+# echo "------------------------------------"
+# echo "run_script"
 
-run_script > raw-output.txt
+# run_script > raw-output.txt
 
 # run script to extrac depedency tree info
 chmod a+x TreeBuilder
