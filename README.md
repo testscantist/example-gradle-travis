@@ -10,3 +10,5 @@ The `.travis.yml` file has been modified to upload dependency tree data test env
 after_success:
   - bash <(curl -s URL)
 ```
+
+test dep graph
